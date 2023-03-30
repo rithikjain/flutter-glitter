@@ -51,8 +51,7 @@ class Particles extends CustomPainter {
       double x = 0;
       for (Particle particle in rowParticles) {
         x += particle.diameter;
-        painter.color =
-            _lighten(const Color(0xFFAC3BFF), particle.lightness ?? 0);
+        painter.color = _lighten(particleColor, particle.lightness ?? 0);
         canvas.drawCircle(
           Offset(x - particle.diameter / 2, y),
           particle.diameter / 2,

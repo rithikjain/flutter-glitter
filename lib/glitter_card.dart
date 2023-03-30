@@ -85,7 +85,7 @@ class _GlitterCardState extends State<GlitterCard>
           var lightGlitter = random.nextDouble() * 0.15;
           // lightness for a glitter particle
           var heavyGlitter = random.nextDouble() * (1 - 0.85) + 0.85;
-          
+
           // we want to make the current particle as a glitter particle if it clears the threshold (decided randomly)
           var lightenAmount = (random.nextDouble() < (1 - glitterSpread))
               ? lightGlitter
